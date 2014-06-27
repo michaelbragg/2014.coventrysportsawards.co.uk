@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <!--[if lte IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+  <head>
+
+    {% include templates/prefetch.html %}
+    {% include templates/meta.html %}
+
+    <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}</title>
+
+    {% include templates/favicon.html %}
+    {% include templates/css.html %}
+    {% include templates/javascript_head.html %}
+
+  </head>
+
+  <body {% if page.class %}class="{% for class in page.class %}{{ class }} {% endfor %}"{% endif %}>
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KFLVZP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFLVZP');</script>
+<!-- End Google Tag Manager -->
+
+    <a href="#content" class="visuallyhidden focusable" title="Skip to Site Content" accesskey="s" rel="nofollow">Skip to page content</a>
+
+{% include templates/header.html %}
+
+{% include templates/banner.html %}
+
+<section role="main" class="wrapper">
+
+  <div class="wrapper__sub box cf">
+
+      {{ content }}
+
+  </div>
+
+</section>
+
+{% include templates/sponsors.html %}
+
+{% include templates/footer.html %}
+
+{% include templates/javascript_body.html %}
+
+  </body>
+</html>

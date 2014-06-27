@@ -1,0 +1,57 @@
+
+.navicon {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+
+  .navigation__main {
+    text-align: right;
+  }
+
+}
+
+.navigation__main a {
+  padding: 0 1em;
+  border-bottom: 1px solid @brand--grey-dark;
+  background-color: @brand--black;
+  color: rgb(255,255,255);
+  line-height: 44px;
+}
+
+.navigation__main li:last-child a {
+  border-bottom: none;
+}
+
+
+@media screen and (min-width: 769px) {
+
+  .navigation__main a {
+    padding: 0 1em;
+    border-bottom: none;
+    background-color: transparent;
+    line-height: 44px;
+    color: rgb(255,255,255);
+  }
+
+  .navigation__main > li > a {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    background-color: @brand--black;
+    background-repeat: repeat-x;
+    color: #fff;
+  }
+
+  .navigation__main > li > a:hover,
+  .navigation__main > li > a:focus {
+    background-color: @brand--gold;
+    background-image: -moz-linear-gradient(top, @brand--gold 0%, @brand--gold-dark 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@brand--gold), color-stop(100%,@brand--gold-dark)); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, @brand--gold 0%,@brand--gold-dark 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top, @brand--gold 0%,@brand--gold-dark 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top, @brand--gold 0%,@brand--gold-dark 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom, @brand--gold 0%,@brand--gold-dark 100%); /* W3C */
+    color: @color--primary;
+  }
+
+}

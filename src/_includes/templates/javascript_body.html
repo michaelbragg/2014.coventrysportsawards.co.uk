@@ -1,0 +1,11 @@
+<!--  JavaScript Body  -->
+
+<script src="{{ site.static }}/js/global.js" defer></script>
+
+{% if page.javascript %}
+{% for js in page.javascript %}
+  <script src="{{ site.static}}/js/{{ js }}.js" defer></script>
+{% endfor %}
+{% endif %}
+
+{% include templates/analytics.html %}
