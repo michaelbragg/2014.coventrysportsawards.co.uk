@@ -21,10 +21,10 @@ rdiscount:
 
 name: Coventry Sports Awards 2014
 
-url: http://www.coventrysportsawards.co.uk/
-static: http://www.coventrysportsawards.co.uk/static
-media: http://www.coventrysportsawards.co.uk/media
-api: http://www.coventrysportsawards.co.uk/api
+url: http://www.coventrysportsawards.co.uk/2014
+static: http://www.coventrysportsawards.co.uk/2014/static
+media: http://www.coventrysportsawards.co.uk/2014/media
+api: http://www.coventrysportsawards.co.uk/2014/api
 
 ## Analytics
 
