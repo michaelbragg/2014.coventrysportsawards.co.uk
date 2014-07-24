@@ -7,7 +7,7 @@
 <meta name="keywords" content="{% for keyword in page.meta.keywords %}
 {{ keyword }}, {% endfor %}">{% elsif site.meta.keywords %}<meta name="keywords" content="{% for keyword in site.meta.keywords %}{{ keyword }}, {% endfor %}">{% endif %}
 {% if page.meta.description %}<meta name="description" content="{{ page.meta.description }}">{% elsif site.meta.description %}<meta name="description" content="{{ site.meta.description }}">{% endif %}
-{% if page.meta.author %}<meta rel="author" name="author" content="{{ page.meta.author }}" href="{{ page.meta.google }}">{% elsif site.meta.author %}<meta rel="author" name="author" content="{{ site.meta.author }}" href="{{ site.meta.google }}">{% endif %}
+{% if page.meta.author %}<meta rel="author" name="author" content="{{ page.meta.author }}" href="{{ page.meta.google }}"><link rel="author" href="{{ page.meta.author }}">{% elsif site.meta.author %}<meta rel="author" name="author" content="{{ site.meta.author }}" href="{{ site.meta.google }}"><link rel="author" href="{{ site.meta.author }}">{% endif %}
 
 <!--  Open Graph  -->
 <meta content="{{ site.title }}" property="og:site_name">
