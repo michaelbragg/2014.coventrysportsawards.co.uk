@@ -1,0 +1,54 @@
+# _config.yml
+
+# Server Config
+
+safe: true
+
+source: ./src
+destination: ./beta
+relative_permalinks: false
+
+timezone: Europe/London
+
+future: false
+lsi: false
+pygments: false
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+
+# Site Config
+
+name: Coventry Sports Awards 2014
+
+url: http://www.coventrysportsawards.co.uk/beta
+static: http://www.coventrysportsawards.co.uk/beta/static
+media: http://www.coventrysportsawards.co.uk/beta/media
+api: http://www.coventrysportsawards.co.uk/beta/api
+
+## Analytics
+
+google_analytics_id:
+
+## Meta
+
+meta:
+  author: Coventry Telegraph
+  publisher: https://plus.google.com/103544945089638905382
+  description:
+  keywords:
+    - "coventry sports awards"
+    - "coventry sport"
+    - "sports awards"
+    - "sports advertising"
+    - "sports awards 2014"
+    - "coventry"
+    - "coventry sports awards winner"
+    - "how to nominate"
+    - "coventry telegraph"
+    - "coventry times"
+    - "sponsor awards"
+    - "increase publicity"
+  google: https://plus.google.com/103544945089638905382
+  twitter:
+  facebook:
