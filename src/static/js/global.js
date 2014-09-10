@@ -3,9 +3,8 @@
 
 {% include bower_components/jquery/dist/jquery.min.js %}
 
-
 /*! SVG Fallback for unsupported browsers */
-if(!Modernizr.svg){$('img').each(function(){$(this).attr('src',$(this).data('fallback'));});}
+(function($){if(!Modernizr.svg){$('img').each(function(){$(this).attr('src',$(this).data('fallback'));});}}(jQuery));
 
 /*!
  *  randomBackground.js - v0.1.3
