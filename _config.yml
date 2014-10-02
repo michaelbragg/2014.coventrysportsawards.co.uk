@@ -12,7 +12,7 @@ timezone: Europe/London
 
 future: false
 lsi: false
-pygments: false
+highlighter: null
 markdown: rdiscount
 rdiscount:
   extensions: [smart]
